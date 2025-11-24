@@ -1,78 +1,117 @@
-# MERN Stack Integration Assignment
+MERN Blog Application
+A full-stack blog application built with the MERN stack (MongoDB, Express.js, React.js, Node.js) featuring user authentication, CRUD operations, and real-time interactions.
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+🚀 Features
+User Authentication - Register, login, and JWT-based authorization
 
-## Assignment Overview
+Blog Management - Create, read, update, and delete blog posts
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+Categories - Organize posts by categories
 
-## Project Structure
+Comments - Interactive comment system for posts
 
-```
+Search & Filter - Find posts by keywords or categories
+
+Responsive Design - Mobile-friendly interface
+
+🛠️ Tech Stack
+Frontend: React, Vite, React Router, Axios
+
+Backend: Node.js, Express.js, MongoDB, Mongoose
+
+Authentication: JWT, bcryptjs
+
+Styling: CSS3 with modern design
+
+📦 Installation
+Clone the repository
+
+bash
+git clone https://github.com/PLP-MERN-Stack-Development/mern-stack-integration-reubenm597.git
+cd mern-stack-integration-reubenm597
+Install dependencies
+
+bash
+# Install root dependencies
+npm install
+
+# Install all project dependencies
+npm run install-all
+Environment Setup
+
+Create server/.env:
+
+env
+MONGODB_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+NODE_ENV=development
+Create client/.env:
+
+env
+VITE_API_URL=http://localhost:5000/api
+Start the application
+
+bash
+# Start both frontend and backend
+npm run dev
+🎯 Usage
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:5000/api
+
+API Endpoints
+Method	Endpoint	Description
+POST	/api/auth/register	User registration
+POST	/api/auth/login	User login
+GET	/api/posts	Get all posts
+POST	/api/posts	Create a post (authenticated)
+GET	/api/posts/:id	Get single post
+PUT	/api/posts/:id	Update post (author only)
+DELETE	/api/posts/:id	Delete post (author only)
+GET	/api/categories	Get all categories
+📁 Project Structure
+text
 mern-blog/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
+├── client/                 # React frontend
+│   ├── src/
 │   │   ├── components/     # Reusable components
 │   │   ├── pages/          # Page components
 │   │   ├── hooks/          # Custom React hooks
-│   │   ├── services/       # API services
-│   │   ├── context/        # React context providers
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Express.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
+│   │   ├── context/        # State management
+│   │   └── services/       # API services
+│   └── package.json
+├── server/                 # Express backend
 │   ├── models/             # Mongoose models
+│   ├── controllers/        # Route controllers
 │   ├── routes/             # API routes
 │   ├── middleware/         # Custom middleware
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
-```
+│   └── server.js           # Entry point
+└── README.md
+🚀 Deployment
+Frontend (Vercel/Netlify)
+Build command: npm run build
 
-## Getting Started
+Output directory: client/dist
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+Backend (Railway/Render)
+Set environment variables
 
-## Files Included
+Start command: npm start
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+🤝 Contributing
+Fork the project
 
-## Requirements
+Create your feature branch (git checkout -b feature/AmazingFeature)
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+Commit your changes (git commit -m 'Add some AmazingFeature')
 
-## Submission
+Push to the branch (git push origin feature/AmazingFeature)
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Open a Pull Request
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+📝 License
+This project is licensed under the MIT License.
 
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+👥 Authors
+Your Name - Reuben Mwikya
