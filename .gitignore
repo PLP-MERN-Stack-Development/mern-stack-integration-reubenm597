@@ -1,0 +1,53 @@
+# ==========================================
+# DEPENDENCIES
+# ==========================================
+node_modules/
+*/node_modules/
+
+# ==========================================
+# ENVIRONMENT VARIABLES (CRITICAL!)
+# ==========================================
+.env
+*.env
+server/.env
+client/.env
+.env.local
+.env.development.local
+.env.production.local
+
+# ==========================================
+# BUILD OUTPUTS
+# ==========================================
+dist/
+build/
+client/dist/
+client/build/
+
+# ==========================================
+# LOGS
+# ==========================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# IDE/EDITOR FILES
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# UPLOADS (if you add file uploads later)
+# ==========================================
+uploads/
+server/uploads/
